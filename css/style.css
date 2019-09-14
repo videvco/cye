@@ -1,4 +1,4 @@
-/* Color Scheme */
+/** Color Scheme **/
 :root{
 	--red: #B3001B; /* Alabama Crimson */
 	--blue: #084887; /* Dark Cerulean */
@@ -6,7 +6,7 @@
 	--pastel-blue: #7EA3CC; /* Dark Pastel Blue */
 	--white: #F7F5FB; /* Magnolia */ 
 }
-/* *** */
+/* **** */
 
 /*Navigation bar styling(){*/
 nav{
@@ -14,3 +14,53 @@ nav{
 	background-color: rgb(70,70,70);
 }
 /*}Navigation bar styling*/
+
+
+
+/** Mission, Vission, Objective Style **/
+div.statements{
+	color: var(--white);
+}
+
+div#Mission, div#Vission, div#Objective{
+	height: 38vh;
+	border: var(--black) solid 1px;
+}
+
+div#Mission{
+	background-color: var(--pastel-blue); 
+}
+
+div#Vission{
+	background-color: var(--blue);
+}
+
+div#Objective{
+	background-color: var(--white);
+	color: var(--black);
+}
+
+div.bullet-point{
+	margin-right: 0; 
+}
+
+div.bullet-point > span{
+	height: 100%;
+	background-color: var(--black);
+	width : 50%;
+	text-align: right;
+}
+
+div p.statement-text > span{
+	background-color: white;
+}
+
+div p.statement-text > span::before {
+  content: ".";
+  background-color: yellow;
+}
+
+p.statement-text{
+	text-align: left;
+}
+/* **** */
