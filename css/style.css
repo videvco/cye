@@ -1,7 +1,7 @@
-:root{
-	--red: #B3001B; /* Alabama Crimson */
-	--blue: #084887; /* Dark Cerulean */
-	--black: #262626; /* Raisin Black */
-	--pastel-blue: #7EA3CC; /* Dark Pastel Blue */
-	--white: #F7F5FB; /* Magnolia */ 
+
+/*Navigation bar styling(){*/
+nav{
+	height: 60px;
+	background-color: rgb(70,70,70);
 }
+/*}Navigation bar styling*/
