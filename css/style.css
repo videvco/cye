@@ -1,4 +1,3 @@
-/** Color Scheme **/
 :root{
 	--red: #B3001B; /* Alabama Crimson */
 	--blue: #084887; /* Dark Cerulean */
@@ -6,61 +5,80 @@
 	--pastel-blue: #7EA3CC; /* Dark Pastel Blue */
 	--white: #F7F5FB; /* Magnolia */ 
 }
-/* **** */
-
 /*Navigation bar styling(){*/
-nav{
+nav.navbar{
 	height: 60px;
-	background-color: rgb(70,70,70);
+	background-color: var(--black);
+	padding: 0px 5%;
+}
+
+nav a.navbar-brand{
+	/*background-color: gold;*/
+	width: 20%;
+	height: 100%;
+	background-image: url("../images/cosmo.png");
+	background-position: center top 31%;
+	background-repeat: no-repeat;
+	background-size: auto 650%;
+}
+
+div#collapsingNav, div#collapsingNav ul{
+	height: 100%;
+	width: 40%;
+}
+
+div#collapsingNav ul li{
+	width: 50%;
+	text-align: center;
+	font-weight: bold;
+}
+
+div#collapsingNav a{
+	padding-top: 1em;
+	color: white;
+	text-decoration: none;
+	height: 100%;
+}
+
+div#collapsingNav li:hover{
+	background-color: var(--pastel-blue);
+}
+
+div#collapsingNav li.active, div#collapsingNav li.active:hover{
+	background-color: var(--blue);
 }
 /*}Navigation bar styling*/
 
-
-
-/** Mission, Vission, Objective Style **/
-div.statements{
-	color: var(--white);
+/*homeInfo(){*/
+div#homeInfo{
+	width: 100%;
+	padding: 5%;
+	margin: 0px;
 }
 
-div#Mission, div#Vission, div#Objective{
-	height: 38vh;
-	border: var(--black) solid 1px;
+div#homeInfo > div{
+	padding: 10px;
+	width: 60%;
 }
 
-div#Mission{
-	background-color: var(--pastel-blue); 
-}
-
-div#Vission{
-	background-color: var(--blue);
-}
-
-div#Objective{
-	background-color: var(--white);
-	color: var(--black);
-}
-
-div.bullet-point{
-	margin-right: 0; 
-}
-
-div.bullet-point > span{
-	height: 100%;
+div#homeInfo > div h4{
+	padding: 8px 0px;
+	width: 100%;
+	margin: 0px;
+	/*height: 1.7em;*/
+	text-align: center;
+	color: white;
 	background-color: var(--black);
-	width : 50%;
-	text-align: right;
+	border: 1px solid var(--black);
 }
 
-div p.statement-text > span{
-	background-color: white;
+div#homeInfo > div > div{
+	width: 100%;
+	padding: 2em 2em;
+	border: 1px solid var(--black);
 }
 
-div p.statement-text > span::before {
-  content: ".";
-  background-color: yellow;
+div#demarcation table th, div#demarcation table td{
+	border-width: 0px;
 }
-
-p.statement-text{
-	text-align: left;
-}
-/* **** */
+/*}homeInfo*/
