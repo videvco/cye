@@ -1,66 +1,138 @@
-/** Color Scheme **/
-:root{
-	--red: #B3001B; /* Alabama Crimson */
-	--blue: #084887; /* Dark Cerulean */
-	--black: #262626; /* Raisin Black */
-	--pastel-blue: #7EA3CC; /* Dark Pastel Blue */
-	--white: #F7F5FB; /* Magnolia */ 
-}
-/* **** */
+.hometext{
+		color: white;
+	}
+	
+@media only screen and (max-width: 678px) {
+	.name{
+		font-size: 6vw;
+		text-align: center;
+		padding-top: 2%;
+		margin-left: 0%;
+	}
 
-/*Navigation bar styling(){*/
-nav{
-	height: 60px;
-	background-color: rgb(70,70,70);
-}
-/*}Navigation bar styling*/
-
-
-
-/** Mission, Vission, Objective Style **/
-div.statements{
-	color: var(--white);
-}
-
-div#Mission, div#Vission, div#Objective{
-	height: 38vh;
-	border: var(--black) solid 1px;
-}
-
-div#Mission{
-	background-color: var(--pastel-blue); 
-}
-
-div#Vission{
-	background-color: var(--blue);
-}
-
-div#Objective{
-	background-color: var(--white);
-	color: var(--black);
-}
-
-div.bullet-point{
-	margin-right: 0; 
-}
-
-div.bullet-point > span{
+	.mission{
+		font-size: 2.5vw;
+		max-width: 50%;
+		margin-left: 25%;
+		line-height: 1.2;
+		text-align: center;
+	}
+	
+	.homeimage{
+		background-image:url('images/cyeShirt.jpg');
+		height: 20vh;
+		width: 100%;
+		background-position: top-center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	
+	.hometext-container{
+	width: 100%;
 	height: 100%;
-	background-color: var(--black);
-	width : 50%;
-	text-align: right;
+	background: rgba(0, 0, 0, .45);
+	}
 }
 
-div p.statement-text > span{
-	background-color: white;
+@media only screen and (min-width: 678px) {
+	.hometext{
+		padding-top: 2%;
+	}
+
+	.name{
+		font-size: 3vw;
+		padding-top: 4%;
+		margin-left: 40%;
+	}
+
+	.mission{
+		font-size: 2vw;
+		max-width: 50%;
+		margin-left: 45%;
+		line-height: 1.2;
+		text-align: center;
+	}
+	
+	.homeimage{
+		background-image:url('images/cyeShirt.jpg');
+		height: 30vh;
+		background-position: top-center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	
+	.hometext-container{
+	width: 100%;
+	height: 30vh;
+	background: rgba(0, 0, 0, .45);
+	}
 }
 
-div p.statement-text > span::before {
-  content: ".";
-  background-color: yellow;
+@media only screen and (min-width: 768px) {
+	.hometext{
+		padding-top: 2%;
+	}
+
+	.name{
+		font-size: 3vw;
+		padding-top: 8%;
+		margin-left: 40%;
+	}
+
+	.mission{
+		font-size: 2vw;
+		max-width: 50%;
+		margin-left: 45%;
+		line-height: 1.2;
+		text-align: center;
+	}
+	
+	.homeimage{
+		margin-top: -1%;
+		background-image:url('images/cyeShirt.jpg');
+		height: 65vh;
+		background-position: 40% 50%;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+	
+	.hometext-container{
+	width: 100%;
+	/*height: 65vh;*/
+	background: rgba(0, 0, 0, .45);
+	}
 }
 
-p.statement-text{
-	text-align: left;
+@media only screen and (min-width: 992px) {
+	.hometext{
+		padding-top: 2%;
+	}
+
+	.name{
+		font-size: 3vw;
+		padding-top: 8%;
+		margin-left: 40%;
+	}
+
+	.mission{
+		font-size: 2vw;
+		max-width: 50%;
+		margin-left: 45%;
+		line-height: 1.2;
+		text-align: center;
+	}
+	
+	.homeimage{
+		background-image:url('images/cyeShirt.jpg');
+		height: 65vh;
+		background-position: 40% 50%;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+	
+	.hometext-container{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .45);
+	}
 }
-/* **** */
