@@ -22,18 +22,33 @@
 					</div>
 					<div class="col-12 mr-3 col-md mx-md-3 text-center" id="Mission">
 						<h2>Vission</h2>
-						<p class="statement-text">To work together with stakehoders and other sectors of society through active relationships to improve the welfare and livelihoods of young people in communities</p>
+						<div class="row mx-0">
+							<div class="bullet-point col-1 pr-0">
+								<span>...</span>
+							</div>
+							<p class="statement-text col pl-0">To work together with community stakeholders and other sectors of society To Empower Youth across the world</p>
+						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col mx-3 mt-4 text-center" id="Objective">
 						<h2 class="text-center">Objective</h2>
 						<div class="row">
-							<div class="col-6">
-								<p class="statement-text">To work together with stakehoders and other sectors of society through active relationships to improve the welfare and livelihoods of young people in communities</p>
+							<div class="col-12 col-md-6">
+								<div class="row mx-0">
+									<div class="bullet-point col-1 pr-0">
+										<span>...</span>
+									</div>
+									<p class="statement-text col pl-0">To work together with community stakeholders and Other sectors of society through active relationships to improve thewelfare and livelihoods of young people in communities</p>
+								</div>
 							</div>
-							<div class="col-6">
-								<p class="statement-text">To work together with stakehoders and other sectors of society through active relationships to improve the welfare and livelihoods of young people in communities</p>
+							<div class="col-12 col-md-6">
+								<div class="row mx-0">
+									<div class="bullet-point col-1 pr-0">
+										<span>...</span>
+									</div>
+									<p class="statement-text col pl-0">To be an example of love to the world by giving a service driven by compassion</p>
+								</div>
 							</div>
 						</div>
 					</div>
