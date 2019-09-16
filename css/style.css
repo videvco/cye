@@ -49,6 +49,147 @@ div#collapsingNav li.active, div#collapsingNav li.active:hover{
 }
 /*}Navigation bar styling*/
 
+/*homeImages(){*/
+.hometext{
+	color: white;
+}
+	
+@media only screen and (max-width: 678px) {
+	.name{
+		font-size: 6vw;
+		text-align: center;
+		padding-top: 2%;
+		margin-left: 0%;
+	}
+
+	.mission{
+		font-size: 2.5vw;
+		max-width: 50%;
+		margin-left: 25%;
+		line-height: 1.2;
+		text-align: center;
+	}
+	
+	.homeimage{
+		background-image:url('../images/outside.jpg');
+		height: 20vh;
+		width: 100%;
+		background-position: top-center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	
+	.hometext-container{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .45);
+	}
+}
+
+@media only screen and (min-width: 678px) {
+	.hometext{
+		padding-top: 2%;
+	}
+
+	.name{
+		font-size: 3vw;
+		padding-top: 4%;
+		margin-left: 40%;
+	}
+
+	.mission{
+		font-size: 2vw;
+		max-width: 50%;
+		margin-left: 45%;
+		line-height: 1.2;
+		text-align: center;
+	}
+	
+	.homeimage{
+		background-image:url('../images/outside.jpg');
+		height: 30vh;
+		background-position: top-center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	
+	.hometext-container{
+	width: 100%;
+	height: 30vh;
+	background: rgba(0, 0, 0, .45);
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.hometext{
+		padding-top: 2%;
+	}
+
+	.name{
+		font-size: 3vw;
+		padding-top: 8%;
+		margin-left: 40%;
+	}
+
+	.mission{
+		font-size: 2vw;
+		max-width: 50%;
+		margin-left: 45%;
+		line-height: 1.2;
+		text-align: center;
+	}
+	
+	.homeimage{
+		margin-top: -1%;
+		background-image:url('../images/outside.jpg');
+		height: 65vh;
+		background-position: 40% 35%;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+	
+	.hometext-container{
+	width: 100%;
+	/*height: 65vh;*/
+	background: rgba(0, 0, 0, .45);
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.hometext{
+		padding-top: 2%;
+	}
+
+	.name{
+		font-size: 3vw;
+		padding-top: 8%;
+		margin-left: 40%;
+	}
+
+	.mission{
+		font-size: 1.6vw;
+		max-width: 40%;
+		margin-left: 50%;
+		line-height: 1.2;
+		text-align: center;
+	}
+	
+	.homeimage{
+		background-image:url('../images/outside.jpg');
+		height: 65vh;
+		background-position: 40% 35%;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+	
+	.hometext-container{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .45);
+	}
+}
+/*}homeImages*/
+
 /*homeInfo(){*/
 div#homeInfo{
 	width: 100%;
