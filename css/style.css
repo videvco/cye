@@ -82,3 +82,107 @@ div#demarcation table th, div#demarcation table td{
 	border-width: 0px;
 }
 /*}homeInfo*/
+
+/*Programs(){*/
+
+div.pro-container{
+	width: 90%;
+	border: 1px solid silver;
+	/*height: 80vh;*/
+	margin: 5vh 5vw 5vh 5vw;
+}
+
+div.pro-list{
+	border-right: 1px solid silver;
+}
+
+div.pro-info{
+}
+
+div.pro-list ul{
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+div.pro-list li{
+	list-style: none;
+	/*width: 100%;*/
+	vertical-align: middle;
+	margin: 1.5em 0em 1.5em 0em;
+	font-weight: 400;
+	font-size: 20px;
+	display: table;
+	padding-right: 1.5em;
+	/*position: relative;*/
+	/*background-color: gold;*/
+}
+
+div.pro-list li:hover{
+	cursor: pointer;
+}
+
+div.pro-list li button:focus{
+	outline: none;
+}
+
+div.pro-list li button{
+	margin-right: 1em;
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: white;
+	border: 2px solid silver;
+}
+
+div.pro-list li.pro-active button{
+	border: 2px solid var(--red);
+}
+div.pro-list li span{
+	display: inline-block;
+	position: relative;
+}
+
+div.pro-list li p.under{
+	position: absolute;
+	width: 110%;
+	padding-right: 5px;
+	margin-left: -5px;
+	margin-top: 1%;
+	/*right: 0;*/
+	height: 2px;
+	background-color: silver;
+}
+
+div.pro-list li.pro-active p.under{
+	background-color: var(--red);
+}
+
+div.pro-info{
+	/*padding: 3em;*/
+	background-position: center;
+	background-image: url('../images/edu.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	color: white;
+	padding: 0px;
+}
+
+div.pro-info p{
+	padding: 1em 3em;
+	font-size: 17px;
+}
+
+div.pro-info div.pro-info-content{
+	/*background-color: rgba(0,0,0,0.8);*/
+	background-image: linear-gradient(to right, rgba(0,0,0,0.9) , rgba(0,0,0,0.2));
+	padding: 3em;
+	display: none;
+	height: 100%;
+}
+
+div.pro-info div.info-active{
+	display: block;
+}
+
+/*}*/
