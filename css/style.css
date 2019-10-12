@@ -121,8 +121,11 @@ div#Vission{
 }
 
 div#Objective{
+	display: flex;
+	flex-direction: column;
 	background-color: var(--white);
 	color: var(--black);
+	min-height: 45	vh;
 }
 
 div.bullet-point{
