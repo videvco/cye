@@ -81,23 +81,6 @@ div#demarcation table th, div#demarcation table td{
 }
 /*}homeInfo*/
 
-/** Mission, Vission, Objective Style **/
-@media screen and (max-width: 768px) {
-  	div.statements > div.row:first-child{
-		margin: 0.7% 0%;
-	}
-	div#Mission{
-		margin-top: 4.5%;
-	}
-	div.bullet-point > span{
-		clip-path: circle(30%); 
-	}
-}
-
-div.statements{
-	color: var(--white);
-}
-
 nav a.navbar-brand{
 	/*background-color: gold;*/
 	width: 20%;
@@ -124,55 +107,6 @@ div#collapsingNav a{
 	color: white;
 	text-decoration: none;
 	height: 100%;
-}
-
-div#Mission h2, div#Vission h2, div#Objective h2{
-	margin-bottom: 3%;
-}
-
-div#Mission{
-	background-color: var(--pastel-blue); 
-}
-
-div#collapsingNav li:hover{
-	background-color: var(--pastel-blue);
-}
-
-div#collapsingNav li.active, div#collapsingNav li.active:hover{
-	background-color: var(--blue);
-}
-
-div#Objective{
-	display: flex;
-	flex-direction: column;
-	background-color: var(--white);
-	color: var(--black);
-	min-height: 45	vh;
-}
-
-div.bullet-point{
-	margin-right: 0;
-}
-
-div.bullet-point > span{
-	height: 100%;
-	background-color: var(--white);
-	background-image: ;
-	clip-path: circle(30%); 
-	text-align: right;
-}
-
-div#Objective div.bullet-point > span{
-	background-color: var(--black);
-}
-
-div p.statement-text > span{
-	background-color: white;
-}
-
-div p.statement-text > span::before {
-	content: ".";
-	background-color: yellow;
 }
 
 div#homeInfo{
@@ -204,4 +138,79 @@ div#homeInfo > div > div{
 
 div#demarcation table th, div#demarcation table td{
 	border-width: 0px;
+}
+
+
+div#collapsingNav li:hover{
+	background-color: var(--pastel-blue);
+}
+
+div#collapsingNav li.active, div#collapsingNav li.active:hover{
+	background-color: var(--blue);
+}
+
+div.statements{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+	grid-template-areas: 
+		"vision"
+		"mission"
+		"objective";
+	margin: 1rem;
+	font-weight: 550;
+}
+
+@media screen and (min-width : 768px) {
+	div.statements{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: .1fr 1fr 1fr;
+		grid-gap: 1rem;
+		grid-template-areas: 
+			". ."
+			"vision mission"
+			"objective objective";
+	}
+}
+
+div#Mission, div#Vision, div#Objective{
+	color: var(--white);
+	border: solid .11rem black;
+}
+
+div#Vision{
+	grid-area: vision;
+	text-align: center;
+	background-color: var(--pastel-blue);
+}
+
+div#Mission{
+	grid-area: mission;
+	text-align: center;
+	background-color: var(--blue);
+	color: var(--white);
+}
+
+div#Objective{
+	grid-area: objective;
+	display: grid;
+	text-align: center;
+	background-color: var(--white);
+	color: var(--black);
+}
+
+.svg-img{
+	padding-top: 0.35rem;
+	margin: 0;
+	height: 50px;
+}
+
+div.bullet-point{
+	margin-right: 0;
+	height: 30px;
+}
+
+p.statement-text{
+	text-align: left;
 }
