@@ -126,7 +126,7 @@ let addObjectives = ()=>{
 
 		getInfo('script/objective.json')
 		.then((data) => {
-			data.forEach((el)=>{
+			data.forEach(el=>{
 				$('#Objective > .row').append(
 					createObjective(el.objective)
 				)
