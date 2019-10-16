@@ -2,6 +2,43 @@ $(() => {
 	populateInfo();
 	getURL();
 	addObjectives();
+
+	$('.pro-list li').on('click', e=>{
+
+		$(e.currentTarget)
+		.addClass('pro-active')
+		.siblings('.pro-active')
+		.removeClass('pro-active');
+
+		let program = $(e.currentTarget).children('span').html();
+		program = program.toLowerCase();
+		let prog="#";
+		let img = "";
+		for (let i = 0; i<3; i++) {
+			prog += program[i];
+			img += program[i];
+		}
+
+		$('div.pro-info')
+		.children()
+		.removeClass('info-active')
+		.siblings(prog)
+		.addClass('info-active')
+		.parent()
+		.css('background-image','url("images/'+img+'.jpg")');
+
+		if(prog=="#env"||prog=="#art"||prog=="#emp")
+		{
+			$(prog)
+			.parent()
+			.css('background-size','auto 100%');
+		}
+		else{
+			$(prog)
+			.parent()
+			.css('background-size','100% auto');
+		}
+	});
 });
 
 let populateInfo = () => {
@@ -63,15 +100,6 @@ let getURL = () => {
 }
 
 let createObjective = (text) => {
-
-	// <div class="col-12 col-md-6">
-	// 	<div class="row mx-0">
-	// 		<div class="bullet-point col-1 pr-0">
-	// 			<span>...</span>
-	// 		</div>
-	// 		<p class="statement-text col pl-0">To work together with community stakeholders and Other sectors of society through active relationships to improve thewelfare and livelihoods of young people in communities</p>
-	// 	</div>
-	// </div>
 	
 	let statement_tree = $('<div></div>')
 						 .addClass('col-12 col-md-6')
@@ -79,16 +107,12 @@ let createObjective = (text) => {
 						 	$('<div></div>')
 						 	.addClass('row mx-0')
 						 	.append(
-						 		$('<div></div>')
-						 		.addClass()
-						 		.append(
-						 			$('<div></div>')
-						 			.addClass('bullet-point col-1 pr-0')
-						 			.append(
-						 				$('<span></span>')
-						 				.html('...')
-						 			)
-						 		),
+					 			$('<div></div>')
+					 			.addClass('bullet-point col-1 pr-0')
+					 			.append(
+					 				$('<span></span>')
+					 				.append()
+					 			),
 						 		$('<p></p>')
 						 		.addClass('statement-text col pl-0')
 				 				.append(text)
@@ -103,9 +127,12 @@ let addObjectives = ()=>{
 		getInfo('script/objective.json')
 		.then((data) => {
 			data.forEach((el)=>{
-				$('#Objective > div.row').append(
+				$('#Objective > .row').append(
 					createObjective(el.objective)
 				)
+
+				let len = $('.bullet-point').length;
+				$('.bullet-point').eq(len-1).append("<span><svg class='svg-img'><circle r='8' cx='8' cy='8' fill='black'></circle></svg></span>");
 			});
 		});
 	};
