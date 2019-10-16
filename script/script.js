@@ -42,7 +42,7 @@ $(() => {
 });
 
 let populateInfo = () => {
-	getInfo("home.json").then(data => {
+	getInfo("script/home.json").then(data => {
 		data.map(el => {
 			if(el.demarcation){
 				el.demarcation.map(e => {
