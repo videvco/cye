@@ -28,7 +28,7 @@
 					</div>
 					 <div class="card ml-0">
 						<div class="card-body">
-							<form action="/that_not_my_job.php" method="POST">
+							<form action="message-handler.php" method="POST">
 								<fieldset>
 									<div class="col-12">
 										<div class="row m-2">
