@@ -1,0 +1,46 @@
+[
+	{
+		"demarcation": 	[
+							{
+								"category": "Children",
+								"age": "1-12"
+							},
+							{
+								"category": "Adolescence",
+								"age": "13-20"
+							},
+							{
+								"category": "Young Adults",
+								"age": "21-35"
+							}
+						]
+	},
+	{
+		"priorities": 	[
+							{
+								"priority":"Focus on the mission"
+							},
+							{
+								"priority":"Objectivity"
+							},
+							{
+								"priority":"Diligence"
+							},
+							{
+								"priority":"Treat people with dignity"
+							},
+							{
+								"priority":"Build on community strengths"
+							},
+							{
+								"priority":"Empower"
+							},
+							{
+								"priority":"Be change agents"
+							},
+							{
+								"priority":"Accountability"
+							}
+						]
+	}
+]

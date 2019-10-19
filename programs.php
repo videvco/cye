@@ -10,6 +10,9 @@
 		require 'navbar.php';
 	?>
 	<div class="fluid-container">
+		<div id="pro-header">
+			We follow a bottom-up approach and holistic implementation of programs. We focus on community development, working with people in the grassroots level, holistic programs, and forming relationships with the communities.
+		</div>
 		<div class="pro-container row">
 			<div class="pro-list col-12 col-lg-4">
 				<ul>
@@ -44,5 +47,8 @@
 			</div>
 		</div>
 	</div>
+	<?php
+		require 'footer.php';
+	?>
 </body>
 </html>
