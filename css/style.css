@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=ABeeZee|Didact+Gothic|IBM+Plex+Serif|Muli|Oxygen&display=swap');
 
-/*
-font-family: 'Muli', sans-serif;
-font-family: 'Oxygen', sans-serif;
-font-family: 'ABeeZee', sans-serif;
-font-family: 'Didact Gothic', sans-serif;
-font-family: 'IBM Plex Serif', serif;
-*/
 :root{
 	--red: #B3001B; /* Alabama Crimson */
 	--blue: #084887; /* Dark Cerulean */
