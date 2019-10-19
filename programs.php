@@ -41,6 +41,9 @@
 					<h3>Environment</h3>
 					<p>Integer cursus nunc sit amet odio dapibus dictum. Morbi semper augue et turpis malesuada mollis. In nec faucibus ante. Integer quis ultricies mi. Nam hendrerit elit efficitur nisi viverra convallis. Maecenas pulvinar, ex at mattis eleifend, turpis justo finibus est, non dapibus diam turpis vehicula leo. Vivamus suscipit consectetur ultrices. In sapien risus, faucibus accumsan pulvinar in, tempor et nisl. Curabitur mollis nunc massa, in condimentum tellus sagittis non. Maecenas finibus felis sed magna tristique, ut scelerisque enim vulputate.</p>
 				</div>
+				<div class="nextButton">
+					<input type="submit" value="Next" id="next">
+				</div>
 			</div>
 		</div>
 	</div>

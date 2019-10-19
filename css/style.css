@@ -145,7 +145,7 @@ div.pro-list li span{
 
 div.pro-list li p.under{
 	position: absolute;
-	width: 110%;
+	width: 120%;
 	padding-right: 5px;
 	margin-left: -5px;
 	margin-top: 1%;
@@ -183,6 +183,11 @@ div.pro-info div.pro-info-content{
 
 div.pro-info div.info-active{
 	display: block;
+}
+
+div.nextButton #next{
+	position:absolute;
+	margin-right: 20%;
 }
 
 /*}*/
