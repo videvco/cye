@@ -243,7 +243,6 @@ div#demarcation table th, div#demarcation table td{
 div.pro-container{
 	width: 90%;
 	border: 1px solid silver;
-	height: 70vh;
 	margin: 5vh 5vw 5vh 5vw;
 
 }
@@ -340,6 +339,8 @@ div.pro-info div.pro-info-content{
 div.pro-info div.info-active{
 	display: block;
 }
+
+/*}*/
 
 
 div#pro-header{
