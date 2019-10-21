@@ -15,7 +15,7 @@
 						<div class="bullet-point col-1 pr-0">
 							<span><svg class="svg-img"> <circle r="8" cx="8" cy="8" fill="white"></circle></svg></span>
 						</div>
-						<p class="statement-text col pl-0">World of love and giving </p>
+						<p class="statement-text col pl-0">World of love and giving</p>
 					</div>
 				</div>
 				<div id="Mission">
@@ -34,5 +34,8 @@
 				</div>
 			</div>
 		</div>
+		<?php
+			require 'footer.php';
+		?>
 	</body>
 </html>
